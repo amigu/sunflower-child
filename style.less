@@ -74,21 +74,40 @@ h1, .h1, h2, .h2, .has-large-font-size, .has-huge-font-size {
   color: #fff !important;
 }
 
-.hover-image {
+
+
+.hover-figure-orig-img, .hover-figure-hover-img {
+  transition: opacity .4s ease-in-out;
+}
+
+.hover-figure-hover-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.hover-figure-hover-img:hover {
+  opacity: 1;
+}
+
+.hover-figure {
+  position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   figcaption {
     position: absolute;
-    font-size: 40px;
+    font-size: 60px;
     font-family: BereitBold;
     cursor: pointer;
     pointer-events: none;
     padding: 0 10px;
+    color: white;
+    text-shadow: 2px 2px 6px #777;
+    margin-bottom: 1rem
   }
   &:hover figcaption {
-    color: @color-secondary;
-    background-color: rgba(255,255,255,.85);
     //text-decoration: underline;
   }
 }
