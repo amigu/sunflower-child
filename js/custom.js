@@ -24,7 +24,7 @@ document.querySelectorAll('.hover-figure').forEach(hoverFigure => {
   const hoverSrc = image.src.replace(/((?:-\d+x\d+)?\.[^.]*)$/, '-hover$1')
   const preloadImg = new Image()
   preloadImg.addEventListener('load', () => {
-    image.removeAttribute('srcset')
+    // image.removeAttribute('srcset')
     const hoverImage = document.createElement('img')
     hoverImage.src = hoverSrc
     hoverImage.className = 'hover-figure-hover-img'
