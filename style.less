@@ -33,8 +33,25 @@
 
 h1, .h1, h2, .h2, .has-large-font-size, .has-huge-font-size {
   font-family: BereitBold;
-  font-size: 60px;
   margin-bottom: 1.5rem;
+}
+
+h1, .h1, .has-large-font-size {
+  font-size: 45px;
+}
+
+h2, .h2, .has-huge-font-size {
+  font-size: 35px;
+}
+
+@media (min-width: 768px) {
+  h1, .h1, .has-large-font-size {
+    font-size: 60px;
+  }
+
+  h2, .h2, .has-huge-font-size {
+    font-size: 45px;
+  }
 }
 
 .wp-block-columns {
@@ -96,7 +113,6 @@ h1, .h1, h2, .h2, .has-large-font-size, .has-huge-font-size {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  border: 1px solid rgba(255,255,255,.3);
   figcaption {
     position: absolute;
     font-size: 40px;
