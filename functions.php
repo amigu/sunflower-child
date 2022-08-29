@@ -12,6 +12,14 @@ function my_theme_enqueue_styles() {
 }
 
 /**
+ * Add class to body
+ */
+add_filter( 'body_class', function( $classes ) {
+    return array_merge( $classes, array( 'sunflower-child' ) );
+} );
+
+
+/**
  * Add custom js file
  */
 wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/js/custom.js', array(), '', true );
