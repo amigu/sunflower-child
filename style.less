@@ -79,11 +79,13 @@
 
   .wp-block-button__link {
     border-radius: 5px;
-  }
-
-  .wp-block-button__link:hover {
-    background-color: @color-accent-2 !important;
-    color: #fff !important;
+    &:hover {
+      background-color: @color-accent-2 !important;
+      color: #fff !important;
+    }
+    &:visited {
+      color: #fff;
+    }
   }
 
   .hover-figure-orig-img, .hover-figure-hover-img {
